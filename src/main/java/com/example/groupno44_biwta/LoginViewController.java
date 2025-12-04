@@ -9,13 +9,19 @@ public class LoginViewController
     @javafx.fxml.FXML
     private TextField logInTextField;
     @javafx.fxml.FXML
-    private PasswordField passwoardField;
+    private PasswordField passwordField;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
+
+
     @javafx.fxml.FXML
-    public void handaleLogInButton(ActionEvent actionEvent) {
+    public void handleCreateAccountButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleLogInButton(ActionEvent actionEvent) {
     }
 }

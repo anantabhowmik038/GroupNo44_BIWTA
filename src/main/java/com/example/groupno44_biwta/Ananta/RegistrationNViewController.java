@@ -1,0 +1,84 @@
+package com.example.groupno44_biwta.Ananta;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
+public class RegistrationNViewController
+{
+    @javafx.fxml.FXML
+    private TextField phoneNumberTextField;
+    @javafx.fxml.FXML
+    private TextArea alertMessage;
+    @javafx.fxml.FXML
+    private TextField emailTextField;
+    @javafx.fxml.FXML
+    private PasswordField passwordField;
+    @javafx.fxml.FXML
+    private TextField usernameTextField;
+    @javafx.fxml.FXML
+    private ComboBox<String> accountTypeComboBox;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+
+        accountTypeComboBox.getItems().addAll("Crew Member","Passenger");
+        accountTypeComboBox.setValue("Passenger");
+    }
+
+    @javafx.fxml.FXML
+    public void handleOnRegisterAccount(ActionEvent actionEvent) {
+        String username = usernameTextField.getText().trim();
+        String email = emailTextField.getText().trim();
+        String phoneNumber = phoneNumberTextField.getText().trim();
+        String password = passwordField.getText();
+        String accountType = accountTypeComboBox.getValue();
+
+        if (username.isEmpty() || email.isEmpty() || phoneNumber.isEmpty() || password.isEmpty() || accountType == null) {
+
+            alertMessage.setText("ERROR: Please fill in all fields.");
+
+            return;
+        }
+        String userId = "PLACEHOLDER-ID";
+        String ferryIdAssigned;
+        if (accountType.equals("Crew Member")) {
+            ferryIdAssigned = "TBD";
+        } else {
+            ferryIdAssigned = null;
+        }
+        UserMemberPassenger newUser = new UserMemberPassenger(
+                userId,
+                username,
+                password,
+                accountType,
+                email,
+                phoneNumber,
+                ferryIdAssigned
+        );
+        alertMessage(Alert.AlertType.INFORMATION, "Registration Successful! ",
+                "Validation successful for " + username + " (" + accountType + "). Data ready for storage.");
+
+        clearForm();
+
+
+        System.out.println("Data captured and model created: " + newUser);
+    }
+
+
+    private void clearForm() {
+        usernameTextField.clear();
+        emailTextField.clear();
+        phoneNumberTextField.clear();
+        passwordField.clear();
+        accountTypeComboBox.setValue("Passenger");
+    }
+
+    private void alertMessage(Alert.AlertType type, String title, String message) {
+        Alert alert = new Alert(type);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
+}

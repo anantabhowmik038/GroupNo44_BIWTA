@@ -4,5 +4,8 @@ module com.example.groupno44_biwta {
 
 
     opens com.example.groupno44_biwta to javafx.fxml;
+    opens com.example.groupno44_biwta.Ananta to javafx.fxml;
+
     exports com.example.groupno44_biwta;
+
 }

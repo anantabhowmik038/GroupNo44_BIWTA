@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="525.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupno44_biwta.Ananta.ViewMyBookingsViewController">
+   <children>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="205.0" prefHeight="200.0" prefWidth="773.0">
+        <columns>
+          <TableColumn fx:id="bookingIdTableCol" prefWidth="103.99999618530273" text="Booking ID" />
+          <TableColumn fx:id="ferryRouteTableCol" prefWidth="123.19998168945312" text="Ferry Route" />
+            <TableColumn fx:id="departureDateTableCol" prefWidth="145.59999084472656" text="Departure Date" />
+            <TableColumn fx:id="departureTimeTableCol" prefWidth="128.800048828125" text="Departure Time" />
+            <TableColumn fx:id="statusTableCol" prefWidth="144.0" text="Status" />
+            <TableColumn fx:id="pricePaidTableCol" prefWidth="118.39996337890625" text="Price Paid" />
+        </columns>
+      </TableView>
+      <Button layoutX="390.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleOnCancelButton" text="Cancel" />
+      <Button layoutX="658.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleOnPrintButton" text="Print" />
+      <Button layoutX="20.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleOnBackDashBoardButton" text="Back" />
+      <Button layoutX="77.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleOnViewButton" text="View" />
+      <Text layoutX="390.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details" wrappingWidth="51.200000000000045">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

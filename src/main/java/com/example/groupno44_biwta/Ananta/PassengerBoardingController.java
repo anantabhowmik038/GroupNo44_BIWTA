@@ -2,6 +2,8 @@ package com.example.groupno44_biwta.Ananta;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class PassengerBoardingController
@@ -18,6 +20,14 @@ public class PassengerBoardingController
     private TextField searchTextField;
     @javafx.fxml.FXML
     private TextField boardingStatusTextField;
+    @javafx.fxml.FXML
+    private TableView passengerTableView;
+    @javafx.fxml.FXML
+    private TableColumn boardingStatusTableCol;
+    @javafx.fxml.FXML
+    private TableColumn tablePassPassengerNameTableCol;
+    @javafx.fxml.FXML
+    private TableColumn tablePassTicketIdCol;
 
     @javafx.fxml.FXML
     public void initialize() {

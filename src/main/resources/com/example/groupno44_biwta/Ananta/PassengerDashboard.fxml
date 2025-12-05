@@ -5,7 +5,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="608.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupno44_biwta.Ananta.PassengerDashboardController">
    <children>
       <Text layoutX="322.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passenger Dashboard" wrappingWidth="312.3089599609375">
@@ -13,10 +12,14 @@
             <Font size="32.0" />
          </font>
       </Text>
-      <Button layoutX="163.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleOnBookTicketsButton" prefHeight="26.0" prefWidth="126.0" text="Book Tickets" />
-      <Button layoutX="163.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleOnMyBookingsButton" prefHeight="26.0" prefWidth="126.0" text="My Bookings" />
-      <Button layoutX="163.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleOnLiveFerryTrackerButton" prefHeight="26.0" prefWidth="126.0" text="Live Ferry Tracker" />
-      <Button layoutX="163.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleOnFeedbackAndSupportButton" text="Feedback &amp; Support" />
-      <Button layoutX="413.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleOnPassengerDashboardLogOutButton" text="Log Out" />
+      <Button layoutX="163.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleOnBookTicketsButton" prefHeight="26.0" prefWidth="166.0" text="Book Tickets" />
+      <Button layoutX="163.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleOnMyBookingsButton" prefHeight="26.0" prefWidth="166.0" text="My Bookings" />
+      <Button layoutX="162.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleOnLiveFerryTrackerButton" prefHeight="26.0" prefWidth="166.0" text="Live Ferry Tracker" />
+      <Button layoutX="163.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleOnFeedbackAndSupportButton" prefHeight="26.0" prefWidth="166.0" text="Feedback &amp; Support" />
+      <Button layoutX="52.0" layoutY="542.0" mnemonicParsing="false" onAction="#handleOnBackDashboardButton" text="Back" />
+      <Button layoutX="426.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleOnPaymentHistoryButton" prefHeight="26.0" prefWidth="194.0" text="Payment And History" />
+      <Button layoutX="428.0" layoutY="199.0" mnemonicParsing="false" onAction="#handleOnSeatVehicleManagButton" prefHeight="26.0" prefWidth="194.0" text="Seat And Vehicle Management" />
+      <Button layoutX="428.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleOnProfileAndPaySettingButton" prefHeight="26.0" prefWidth="194.0" text="Profile And Payment Settings" />
+      <Button layoutX="423.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleOnTerminalFerryInfoButton" prefHeight="26.0" prefWidth="202.0" text="Terminal And Ferry Info" />
    </children>
 </AnchorPane>

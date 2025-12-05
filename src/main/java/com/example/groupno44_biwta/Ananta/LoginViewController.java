@@ -1,4 +1,4 @@
-package com.example.groupno44_biwta;
+package com.example.groupno44_biwta.Ananta;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.PasswordField;
@@ -7,7 +7,7 @@ import javafx.scene.control.TextField;
 public class LoginViewController
 {
     @javafx.fxml.FXML
-    private TextField logInTextField;
+    private TextField userIdTextField;
     @javafx.fxml.FXML
     private PasswordField passwordField;
 
@@ -15,13 +15,11 @@ public class LoginViewController
     public void initialize() {
     }
 
-
-
     @javafx.fxml.FXML
-    public void handleCreateAccountButton(ActionEvent actionEvent) {
+    public void handleOnCreateAccountButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleLogInButton(ActionEvent actionEvent) {
+    public void handleOnLogInButton(ActionEvent actionEvent) {
     }
 }

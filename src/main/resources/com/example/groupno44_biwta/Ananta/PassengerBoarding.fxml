@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="623.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupno44_biwta.Ananta.PassengerBoardingController">
+   <children>
+      <Text layoutX="344.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passenger Boarding" wrappingWidth="246.49444580078125">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="127.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket Id">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ticketIdTextField" layoutX="232.0" layoutY="150.0" />
+      <Text layoutX="77.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passenger Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="passengerNameTextField" layoutX="233.0" layoutY="215.0" />
+      <Text layoutX="83.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boarding Status">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="boardingStatusTextField" layoutX="234.0" layoutY="277.0" />
+      <Text layoutX="127.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchTextField" layoutX="232.0" layoutY="352.0" />
+      <Button layoutX="123.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleOnSearchButton" text="Search " />
+      <Label fx:id="totalCapacityLabel" layoutX="576.0" layoutY="133.0" prefHeight="26.0" prefWidth="150.0" style="-fx-border-color: Black;" text="Label" />
+      <Button layoutX="55.0" layoutY="549.0" mnemonicParsing="false" onAction="#handleOnBackDashBoardButton" text="Back" />
+      <Label fx:id="bookedCountLabel" layoutX="576.0" layoutY="173.0" prefHeight="26.0" prefWidth="150.0" style="-fx-border-color: Blue;" text="Label" />
+      <Button layoutX="427.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleOnScanButton" text="Scan" />
+      <Button layoutX="599.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleOnToggleBoardingButton" text="Toggle Boarding" />
+   </children>
+</AnchorPane>

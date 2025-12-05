@@ -58,14 +58,12 @@ public class RegistrationNViewController
         alertMessage(Alert.AlertType.INFORMATION, "Registration Successful! ",
                 "Validation successful for " + username + " (" + accountType + "). Returning to Login.");
 
-        // 2. Clear the form
         clearForm();
         System.out.println("Data captured and model created: " + newUser);
 
-        // 3. Scene Switching to Login Window using HelperClass
+
         try {
-            // FXML file name is Login-View.fxml (must be in the Ananta resource folder)
-            HelperClass.sceneSwitch(actionEvent, "Login-View.fxml", "User Login");
+            HelperClass.sceneSwitch(actionEvent, "login-view.fxml", "User Login");
         }
         catch (IOException e) {
             e.printStackTrace();

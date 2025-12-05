@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="645.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupno44_biwta.Ananta.RegistrationNViewController">
    <children>
       <Text layoutX="253.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New User Registration">
@@ -19,7 +18,7 @@
       </Text>
       <Text layoutX="147.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
       <Text layoutX="147.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
-      <Text layoutX="147.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone NUmber" />
+      <Text layoutX="147.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
       <Text layoutX="147.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
       <Text layoutX="139.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Type" />
       <TextArea fx:id="alertMessage" layoutX="630.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: Black;" />

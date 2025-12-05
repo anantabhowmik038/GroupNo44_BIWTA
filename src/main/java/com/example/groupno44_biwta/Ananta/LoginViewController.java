@@ -13,6 +13,8 @@ public class LoginViewController
 
     @javafx.fxml.FXML
     public void initialize() {
+
+
     }
 
     @javafx.fxml.FXML

@@ -1,20 +1,24 @@
 package com.example.groupno44_biwta.Ananta;
 
-import com.example.groupno44_biwta.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelperClass {
 
-    public static void sceneSwitch(ActionEvent actionEvent, String fxmlFile, String title) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxmlFile));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage stage = (Stage)((javafx.scene.Node) actionEvent.getSource()).getScene().getWindow();
+    public static void sceneSwitch(ActionEvent event, String fxmlFile, String title) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(HelperClass.class.getResource(fxmlFile));
+
+        Parent root = loader.load();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
         stage.setTitle(title);
-        stage.setScene(scene);
+        stage.setScene(new Scene(root));
         stage.show();
     }
 }

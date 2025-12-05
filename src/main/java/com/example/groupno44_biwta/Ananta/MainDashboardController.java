@@ -4,6 +4,10 @@ import javafx.event.ActionEvent;
 
 public class MainDashboardController
 {
+    public void setUserData(UserMemberPassenger user) {
+        // Logged in user-ke store ba welcome message set korun
+        // Example: welcomeLabel.setText("Welcome, " + user.getUsername() + "!");
+    }
     @javafx.fxml.FXML
     public void initialize() {
     }

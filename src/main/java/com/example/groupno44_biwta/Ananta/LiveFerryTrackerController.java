@@ -2,12 +2,8 @@ package com.example.groupno44_biwta.Ananta;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
-
 import java.io.IOException;
-import java.io.ObjectInputFilter;
-
 import static com.example.groupno44_biwta.Ananta.AlertClass.showAlert;
 import static com.example.groupno44_biwta.Ananta.HelperClass.sceneSwitch;
 

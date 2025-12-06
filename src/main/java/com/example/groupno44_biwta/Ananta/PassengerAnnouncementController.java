@@ -44,15 +44,6 @@ public class PassengerAnnouncementController
 
         sendMesgEmailCheckBox.setSelected(false);
         sendMesgSMSCheckBox.setSelected(false);
-
-
-//        if(sendMesgEmailCheckBox.isSelected()){
-//            sendMesgSMSCheckBox.setSelected(false);
-//
-//        };
-//        if(sendMesgSMSCheckBox.isSelected()){
-//            sendMesgEmailCheckBox.setSelected(false);
-//        }
     }
 
     @javafx.fxml.FXML

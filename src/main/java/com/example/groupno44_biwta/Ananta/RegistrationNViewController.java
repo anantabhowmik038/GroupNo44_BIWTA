@@ -6,8 +6,7 @@ import javafx.scene.control.*;
 import java.io.IOException;
 import static com.example.groupno44_biwta.Ananta.AlertClass.showAlert;
 
-public class RegistrationNViewController
-{
+public class RegistrationNViewController {
     @javafx.fxml.FXML
     private TextField phoneNumberTextField;
     @javafx.fxml.FXML
@@ -23,7 +22,7 @@ public class RegistrationNViewController
 
     @javafx.fxml.FXML
     public void initialize() {
-        accountTypeComboBox.getItems().addAll("Crew Member","Passenger");
+        accountTypeComboBox.getItems().addAll("Crew Member", "Passenger");
         accountTypeComboBox.setValue("Passenger");
 
     }
@@ -64,8 +63,7 @@ public class RegistrationNViewController
 
         try {
             HelperClass.sceneSwitch(actionEvent, "login-view.fxml", "User Login");
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
             showAlert(Alert.AlertType.ERROR, "Error", "Could not load the Login page.");
         }
@@ -79,13 +77,5 @@ public class RegistrationNViewController
         passwordField.clear();
         accountTypeComboBox.setValue("Passenger");
     }
-
-//    private void alertMessage(Alert.AlertType type, String title, String message) {
-//        Alert alert = new Alert(type);
-//        alert.setTitle(title);
-//        alert.setHeaderText(null);
-//        alert.setContentText(message);
-//        alert.showAndWait();
-//    }
 
 }

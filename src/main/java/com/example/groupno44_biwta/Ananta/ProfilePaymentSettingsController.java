@@ -25,10 +25,6 @@ public class ProfilePaymentSettingsController
     public void handleOnLogOutButton(ActionEvent actionEvent) {
     }
 
-    @Deprecated
-    public void habdleOnBackDashBoardButton(ActionEvent actionEvent) {
-    }
-
     @javafx.fxml.FXML
     public void handleOnUpdateButton(ActionEvent actionEvent) {
     }

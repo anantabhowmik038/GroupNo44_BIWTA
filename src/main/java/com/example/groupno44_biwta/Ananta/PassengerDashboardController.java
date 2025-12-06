@@ -11,14 +11,14 @@ import static com.example.groupno44_biwta.Ananta.HelperClass.sceneSwitch;
 public class PassengerDashboardController
 {
 
-    private void localSceneSwitch(ActionEvent event, String fxmlFileName, String title) {
+    private void localSceneSwitch(ActionEvent actionEvent, String fxmlFileName, String title) {
 
-        String fxmlPath = "/com/example/groupno44_biwta/Ananta/fxml/Passenger/" + fxmlFileName;
+        String fxmlPath = "/com/example/groupno44_biwta/Ananta/fxml/Passenger/" ;
         try {
-            sceneSwitch(event, fxmlPath, title);
+            sceneSwitch(actionEvent, fxmlPath,  "Passenger ");
         } catch (IOException e) {
             e.printStackTrace();
-            showAlert(Alert.AlertType.ERROR, "Error Loading View", "Could not load " + fxmlFileName);
+            showAlert(Alert.AlertType.ERROR, "Error Loading View", "Could not load " );
         }
     }
     @javafx.fxml.FXML
@@ -48,7 +48,7 @@ public class PassengerDashboardController
 
     @javafx.fxml.FXML
     public void handleOnSeatVehicleManagButton(ActionEvent actionEvent) throws IOException {
-        showAlert(Alert.AlertType.INFORMATION, "Feature Not Ready", "Seat and Vehicle Management is not yet implemented.");
+        localSceneSwitch(actionEvent, "Seat-VehicleManagement.fxml", "Passenger: Seat Vehicle Management");
     }
 
     @javafx.fxml.FXML

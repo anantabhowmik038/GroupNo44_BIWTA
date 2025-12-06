@@ -11,24 +11,25 @@ import static com.example.groupno44_biwta.Ananta.HelperClass.sceneSwitch;
 public class CrewMemberDashBoardController
 {
 
-    private void localSceneSwitch(ActionEvent event, String fxmlFileName, String title) {
-        String fxmlPath = "/com/example/groupno44_biwta/Ananta/fxml/CrewMember/" + fxmlFileName;
+    private void localSceneSwitch(ActionEvent actionEvent,String fxmlFileName, String title) {
+        String fxmlPath = "/com/example/groupno44_biwta/Ananta/fxml/CrewMember/" ;
         try {
-            sceneSwitch(event, fxmlPath, title);
+            sceneSwitch( actionEvent, fxmlPath, "Crew Member");
         } catch (IOException e) {
             e.printStackTrace();
-            showAlert(Alert.AlertType.ERROR, "Error Loading View", "Could not load " + fxmlFileName);
+            showAlert(Alert.AlertType.ERROR, "Error Loading View", "Could not load ");
         }
     }
     @javafx.fxml.FXML
     public void initialize() {
+
     }
 
     @javafx.fxml.FXML
     public void handleOnBackButton(ActionEvent actionEvent) {
         String mainDashboardPath = "/com/example/groupno44_biwta/Ananta/fxml/MainDashboard.fxml";
         try {
-            sceneSwitch(actionEvent, mainDashboardPath, "Ferry System - Role Selection");
+            sceneSwitch(actionEvent, mainDashboardPath, "Ferry System Role Selection");
         } catch (IOException e) {
             e.printStackTrace();
             showAlert(Alert.AlertType.ERROR, "Navigation Error", "Could not load the Role Selection Dashboard.");
@@ -56,10 +57,6 @@ public class CrewMemberDashBoardController
         localSceneSwitch(actionEvent,"DailyOperationsAndSafety.fxml", "Crew Member: Daily Operations & Safety");
     }
 
-    @Deprecated
-    public void handleOnMainteenanceTechnicalLogButton(ActionEvent actionEvent) {
-        localSceneSwitch(actionEvent,"MaintenanceTechnical.fxml", "Crew Member: Maintenance Technical log");
-    }
 
     @javafx.fxml.FXML
     public void handleOnEmergencyIncidentReportButton(ActionEvent actionEvent)  {
@@ -68,7 +65,8 @@ public class CrewMemberDashBoardController
 
     @javafx.fxml.FXML
     public void handleOnInventorySuppliesButton(ActionEvent actionEvent) {
-        showAlert(Alert.AlertType.INFORMATION, "Feature Not Ready", "Inventory & Supplies view is not yet implemented.");
+        localSceneSwitch(actionEvent, "Inventory-supplies.fxml", "Crew Member: Inventory supplies");
+
     }
 
     @javafx.fxml.FXML

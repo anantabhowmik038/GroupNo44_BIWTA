@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="651.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupno44_biwta.Ananta.PassengerAnnouncementController">
+   <children>
+      <Text layoutX="332.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PassengerAnnouncement">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="143.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="subjectTextField" layoutX="223.0" layoutY="152.0" />
+      <TextArea fx:id="messageBodyTextArea" layoutX="682.0" layoutY="79.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="91.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Ferry ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="targetFerryIdComboBox" layoutX="223.0" layoutY="197.0" prefWidth="150.0" />
+      <Text layoutX="49.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Announcement Type">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="announcementTypeComboBox" layoutX="222.0" layoutY="243.0" prefWidth="150.0" />
+      <Text layoutX="72.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Target Recipient">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="targetRecipientComboBox" layoutX="222.0" layoutY="288.0" prefWidth="150.0" />
+      <Text layoutX="79.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Message">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="sendMesgEmailCheckBox" layoutX="234.0" layoutY="343.0" mnemonicParsing="false" text="Email">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="sendMesgSMSCheckBox" layoutX="298.0" layoutY="342.0" mnemonicParsing="false" text="SMS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="162.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleOnSendAnnouncementButton" text="Send Announcement">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="420.0" layoutY="408.0" mnemonicParsing="false" onAction="#handleOnClearFormButton" text="Clear Form" />
+      <Button layoutX="39.0" layoutY="598.0" mnemonicParsing="false" onAction="#handleOnBackDashBoardButton" text="Back" />
+   </children>
+</AnchorPane>

@@ -25,7 +25,7 @@ public class MainteenanceTechnicalController
 
     @javafx.fxml.FXML
     public void initialize() {
-        ferryIdComboBox.getItems().addAll("DHA-CHI","BAR-DHA","BAR-CHI");
+        ferryIdComboBox.getItems().addAll("DHA-CHI","BAR-DHA","BAR-CHI","DHA-KHU");
         maintenanceStatusComboBox.getItems().addAll("Pending", "In Progress", "Completed");
         engineerIdComboBox.getItems().addAll("Tech-44A", "Sr. Engineer (Bhowmik)", "Ananta-31");
         problemTypeComboBox.getItems().addAll("Electrical Fault","Mechanical Failure","Software Glitch","Hardware Glitch");

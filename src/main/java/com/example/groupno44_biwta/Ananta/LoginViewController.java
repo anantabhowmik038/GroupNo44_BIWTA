@@ -7,6 +7,8 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
+import static com.example.groupno44_biwta.Ananta.AlertClass.showAlert;
+
 public class LoginViewController
 {
     @javafx.fxml.FXML
@@ -33,11 +35,11 @@ public class LoginViewController
     @javafx.fxml.FXML
     public void handleOnLogInButton(ActionEvent actionEvent) {
     }
-    private void showAlert(Alert.AlertType type, String title, String message) {
-        Alert alert = new Alert(type);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
+//    private void showAlert(Alert.AlertType type, String title, String message) {
+//        Alert alert = new Alert(type);
+//        alert.setTitle(title);
+//        alert.setHeaderText(null);
+//        alert.setContentText(message);
+//        alert.showAndWait();
+//    }
 }

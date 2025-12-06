@@ -1,33 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="525.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupno44_biwta.Ananta.ViewMyBookingsViewController">
    <children>
-      <TableView fx:id="tableView" layoutX="20.0" layoutY="205.0" prefHeight="200.0" prefWidth="773.0">
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="263.0" prefHeight="200.0" prefWidth="773.0">
         <columns>
           <TableColumn fx:id="bookingIdTableCol" prefWidth="103.99999618530273" text="Booking ID" />
           <TableColumn fx:id="ferryRouteTableCol" prefWidth="123.19998168945312" text="Ferry Route" />
             <TableColumn fx:id="departureDateTableCol" prefWidth="145.59999084472656" text="Departure Date" />
             <TableColumn fx:id="departureTimeTableCol" prefWidth="128.800048828125" text="Departure Time" />
             <TableColumn fx:id="statusTableCol" prefWidth="144.0" text="Status" />
-            <TableColumn fx:id="pricePaidTableCol" prefWidth="118.39996337890625" text="Price Paid" />
+            <TableColumn fx:id="pricePaidTableCol" prefWidth="118.39996337890625" text="Price " />
         </columns>
       </TableView>
-      <Button layoutX="390.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleOnCancelButton" text="Cancel" />
-      <Button layoutX="658.0" layoutY="123.0" mnemonicParsing="false" onAction="#handleOnPrintButton" text="Print" />
-      <Button layoutX="20.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleOnBackDashBoardButton" text="Back" />
-      <Button layoutX="77.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleOnViewButton" text="View" />
-      <Text layoutX="390.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details" wrappingWidth="51.200000000000045">
+      <Button layoutX="116.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleOnCancelButton" text="Cancel">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="202.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleOnPrintButton" text="Print">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="20.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleOnBackDashBoardButton" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button layoutX="40.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleOnViewButton" text="View">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Text layoutX="381.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details" wrappingWidth="51.200000000000045">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
+      <Text layoutX="332.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Bookings ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="40.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Id">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bookingIdTextField" layoutX="128.0" layoutY="69.0" />
+      <Text layoutX="291.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ferry Route">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ferryRouteTextField" layoutX="387.0" layoutY="69.0" />
+      <Text layoutX="541.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure Date">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="departureDatePicker" layoutX="661.0" layoutY="69.0" prefHeight="26.0" prefWidth="164.0" />
+      <Text layoutX="71.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="stataComboBox" layoutX="128.0" layoutY="110.0" prefWidth="150.0" />
+      <Text layoutX="328.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="priceTextField" layoutX="388.0" layoutY="110.0" />
    </children>
 </AnchorPane>

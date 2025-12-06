@@ -68,7 +68,7 @@ public class PassengerDashboardController
 
     @javafx.fxml.FXML
     public void handleOnBackDashboardButton(ActionEvent actionEvent) {
-        String mainDashboardPath = "com/example/groupno44_biwta/Ananta/MainDashboard.fxml";
+        String mainDashboardPath = "/com/example/groupno44_biwta/Ananta/MainDashboard.fxml";
         try {
 
             sceneSwitch(actionEvent, mainDashboardPath, "Ferry System - Role Selection");

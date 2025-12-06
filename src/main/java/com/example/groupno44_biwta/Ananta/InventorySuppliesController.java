@@ -91,7 +91,7 @@ public class InventorySuppliesController
 
     @javafx.fxml.FXML
     public void handleOnBackDashboardButton(ActionEvent actionEvent) {
-        String fxmlPath = "com/example/groupno44_biwta/Ananta/CrewMemberDashBoard.fxml";
+        String fxmlPath = "/com/example/groupno44_biwta/Ananta/CrewMemberDashBoard.fxml";
 
         try {
             sceneSwitch(actionEvent, fxmlPath, "Crew Member Dashboard");

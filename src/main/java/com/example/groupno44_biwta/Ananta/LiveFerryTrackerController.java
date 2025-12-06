@@ -40,7 +40,7 @@ public class LiveFerryTrackerController
 
     @javafx.fxml.FXML
     public void handleOnBackDashboardButton(ActionEvent actionEvent) {
-        String fxmlPath = "com/example/groupno44_biwta/Ananta/PassengerDashboard.fxml";
+        String fxmlPath = "/com/example/groupno44_biwta/Ananta/PassengerDashboard.fxml";
 
         try {
             sceneSwitch(actionEvent, fxmlPath, "Crew Member Dashboard");

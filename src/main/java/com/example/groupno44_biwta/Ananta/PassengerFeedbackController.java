@@ -22,6 +22,8 @@ public class PassengerFeedbackController
     @javafx.fxml.FXML
     public void initialize() {
         ferryIdComboBox.getItems().addAll("DHA-CHI","BAR-DHA","BAR-CHI","DHA-KHU");
+        ferryIdComboBox.setValue("DHA-CHI");
+
     }
 
     @javafx.fxml.FXML

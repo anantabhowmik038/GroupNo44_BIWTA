@@ -1,8 +1,7 @@
 package com.example.groupno44_biwta.Ananta;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 
 public class ViewMyBookingsViewController
 {
@@ -20,6 +19,16 @@ public class ViewMyBookingsViewController
     private TableColumn statusTableCol;
     @javafx.fxml.FXML
     private TableColumn departureTimeTableCol;
+    @javafx.fxml.FXML
+    private TextField ferryRouteTextField;
+    @javafx.fxml.FXML
+    private TextField bookingIdTextField;
+    @javafx.fxml.FXML
+    private DatePicker departureDatePicker;
+    @javafx.fxml.FXML
+    private ComboBox <String>stataComboBox;
+    @javafx.fxml.FXML
+    private TextField priceTextField;
 
     @javafx.fxml.FXML
     public void initialize() {

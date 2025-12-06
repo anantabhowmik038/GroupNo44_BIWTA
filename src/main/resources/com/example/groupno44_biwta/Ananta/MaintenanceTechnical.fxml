@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="525.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupno44_biwta.Ananta.MainteenanceTechnicalController">
+<AnchorPane prefHeight="525.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupno44_biwta.Ananta.MaintenanceTechnicalController">
    <children>
       <Text layoutX="33.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Id" wrappingWidth="60.25311279296875" />
       <TextField fx:id="deviceIdTextField" layoutX="119.0" layoutY="119.0" />

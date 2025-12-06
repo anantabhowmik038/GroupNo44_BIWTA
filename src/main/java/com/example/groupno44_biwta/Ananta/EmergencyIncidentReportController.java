@@ -27,10 +27,14 @@ public class EmergencyIncidentReportController
 
     @javafx.fxml.FXML
     public void initialize() {
+        severityComboBox.getItems().addAll("Critical","Major","Minor","Low");
+        severityComboBox.setValue("Critical");
+
     }
 
     @javafx.fxml.FXML
     public void handleOnBackButton(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML

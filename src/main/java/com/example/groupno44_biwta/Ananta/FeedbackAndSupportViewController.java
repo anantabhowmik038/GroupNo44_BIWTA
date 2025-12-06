@@ -19,6 +19,7 @@ public class FeedbackAndSupportViewController
     @javafx.fxml.FXML
     public void initialize() {
         categoryComboBox.getItems().addAll("General Feedback","Complaint","Suggestion","Technical Issue");
+        categoryComboBox.setValue("General Feedback");
     }
 
     @javafx.fxml.FXML

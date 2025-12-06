@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
 import java.io.IOException;
+import static com.example.groupno44_biwta.Ananta.AlertClass.showAlert;
 
 public class RegistrationNViewController
 {
@@ -55,19 +56,18 @@ public class RegistrationNViewController
                 phoneNumber,
                 ferryIdAssigned
         );
-        alertMessage(Alert.AlertType.INFORMATION, "Registration Successful! ",
+        showAlert(Alert.AlertType.INFORMATION, "Registration Successful! ",
                 "Validation successful for " + username + " (" + accountType + "). Returning to Login.");
 
         clearForm();
         System.out.println("Data captured and model created: " + newUser);
-
 
         try {
             HelperClass.sceneSwitch(actionEvent, "login-view.fxml", "User Login");
         }
         catch (IOException e) {
             e.printStackTrace();
-            alertMessage(Alert.AlertType.ERROR, "Error", "Could not load the Login page.");
+            showAlert(Alert.AlertType.ERROR, "Error", "Could not load the Login page.");
         }
     }
 
@@ -80,12 +80,12 @@ public class RegistrationNViewController
         accountTypeComboBox.setValue("Passenger");
     }
 
-    private void alertMessage(Alert.AlertType type, String title, String message) {
-        Alert alert = new Alert(type);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(message);
-        alert.showAndWait();
-    }
+//    private void alertMessage(Alert.AlertType type, String title, String message) {
+//        Alert alert = new Alert(type);
+//        alert.setTitle(title);
+//        alert.setHeaderText(null);
+//        alert.setContentText(message);
+//        alert.showAndWait();
+//    }
 
 }
